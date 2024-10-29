@@ -1,0 +1,58 @@
+m<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotHipHop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="./Css mp3/mp3Style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="./mp3-js/scipt.js" defer></script>
+
+<body>
+    <div id="background">
+        <div id="spothipop">
+            <header>
+                <div class="playlist">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="setting">
+                    <i class="fa fa-cog"></i>
+                </div>
+            </header>
+
+            <main>
+                <div class="album-art">
+                    <img id="cover" src="./assets/img/1632822472_Grave-dans-la-roche.jpg" alt="Album Cover" />
+                </div>
+                <div class="player">
+                    <i class="fa fa-repeat control-button" id="repeat"></i>
+                    <i class="fa fa-fast-backward control-button" id="back"></i>
+                    <i class="fa fa-play control-button" id="play"></i>
+                    <i class="fa fa-fast-forward control-button" id="forw"></i>
+                    <i class="fa fa-random control-button" id="random"></i>
+                </div>
+            </main>
+
+            <footer>
+                <div class="title" id="titre">Sabotage</div>
+                <div id="artiste"></div>
+                <div id="annee"></div>
+                <div id="album"></div>
+                <div class="time-tracker">
+                    <div class="timer">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="time">00:80</div>
+                </div>
+            </footer>
+            <audio id="audioPlayer" controls></audio>
+        </div>
+    </div>
+</body>
+
+</html>

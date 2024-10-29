@@ -1,0 +1,160 @@
+/* Import de la police Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Styles généraux */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #D0D3D4, #909497); /* Dégradé de gris clair à gris foncé */
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* Ombre portée sous le lecteur */
+}
+
+/* Conteneur principal du lecteur MP3 avec un effet de profondeur noir et blanc */
+#spothipop {
+    width: 419px;
+    background: linear-gradient(145deg, #E5E8E8, #BDC3C7); /* Dégradé de gris clair à gris moyen */
+    border-radius: 30px;
+    box-shadow: 
+        5px 5px 15px rgba(0, 0, 0, 0.4), /* Ombre externe pour un effet 3D */
+        inset -5px -5px 10px rgba(255, 255, 255, 0.3), /* Légère ombre interne */
+        inset 5px 5px 10px rgba(0, 0, 0, 0.2); /* Ombre interne plus sombre */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Conserve le style de .player */
+.player {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 70px;
+    width: 176px;
+    height: 176px;
+    background: linear-gradient(0deg, #222, #111); /* Style original noir */
+    border-radius: 100%;
+    border: solid 2px #000;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.2), 0 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Boutons noirs avec disposition centrée */
+.control-button {
+    font-size: 1.5rem;
+    color: #000000;
+    cursor: pointer;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+#play {
+    color: #000000; /* Noire */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#back {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+}
+
+#forw {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+}
+
+#repeat {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#random {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Effet d'écran autour de l'image avec une légère lueur blanche */
+.album-art {
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.568); /* Fond gris moyen pour encadrer l'image */
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 
+        0 0 20px rgba(255, 255, 255, 0.4), /* Lueur blanche subtile */
+        inset 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre interne */
+}
+
+.album-art img {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style pour le texte avec la police Poppins et une couleur gris foncé */
+footer {
+    font-family: 'Poppins', sans-serif;
+    color: #2C3E50; /* Gris foncé */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title, #artiste, #annee, #album {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 5px 0;
+    color: #2C3E50;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Styles pour la barre de progression */
+.time-tracker {
+    margin-top: 10px;
+    border-top: solid 1px #000;
+    padding-top: 0.5rem;
+}
+
+.timer .bg {
+    height: 0.6rem;
+    border-top: solid 1px #000;
+    border-radius: 10px;
+    background: linear-gradient(to right, #AAB7B8, #7B7D7D); /* Dégradé de gris clair à gris foncé */
+}
+
+.time {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #909497;
+}
